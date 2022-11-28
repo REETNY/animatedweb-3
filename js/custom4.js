@@ -20,6 +20,7 @@ let main_body = document.getElementsByClassName("main-body")[0]; // get the body
 
 function timer(){
     main_body.style.overflowY = "auto"; // make the page scrollable
+    main_body.style.overflowX = "hidden"
 }
 
 
