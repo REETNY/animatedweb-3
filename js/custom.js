@@ -4,7 +4,7 @@ gsap.registerPlugin(ScrollTrigger);
 const tl = gsap.timeline({
     scrollTrigger: {
         trigger: ".section2",
-        start: "center bottom"
+        start: "top top"
     }
 });
 

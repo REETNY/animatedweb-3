@@ -13,7 +13,7 @@ gsap.registerPlugin(ScrollTrigger);
 const tl2 = gsap.timeline({
     scrollTrigger: {
         trigger: ".section1",
-        start: "top center"
+        start: "top top"
     }
 });
 tl2.from(".intro-head2", {y: -50, opacity: 0, duration: 1.5, ease: "Expo.easeInOut" }, "+=7");
