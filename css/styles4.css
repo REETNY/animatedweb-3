@@ -1,0 +1,196 @@
+/* resets */
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-body{
+    overflow-y: hidden;
+    overflow-x: hidden;
+    background: linear-gradient(90deg, #eecda3, #ef629f);
+}
+
+
+
+main{
+    overflow-x: hidden;
+}
+
+
+
+/* overlay background */
+
+.overlay{
+    display: block;
+}
+
+.cover{
+    position: absolute;
+    width: 20%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgb(155, 70, 70);
+    z-index: 2;
+}
+
+.cover:nth-child(2){
+    left: 20%;
+}
+
+.cover:nth-child(3){
+    left: 40%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.cover:nth-child(4){
+    left: 60%;
+}
+
+.cover:nth-child(5){
+    left: 80%;
+}
+
+
+/* form body */
+
+.form-body{
+    margin-top: 30px;
+}
+
+
+.main-form{
+    background-color: rgb(0, 0, 0,.3);
+    padding: 20px 25px;
+    border-radius: 5px;
+}
+
+.form-head{
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+#textarea{
+    width: 100%;
+    border-radius: 5px;
+}
+
+.submit-btn{
+    display: block !important;
+    width: 40% !important;
+    height: 40px !important;
+    background-color: #95b117 !important;
+    color: white !important;
+    margin: 0 auto !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center;
+    letter-spacing: 1px !important;
+    font-weight: 600 !important;
+    border-radius: 20px !important;
+    transition: transform 0.2s linear !important;
+}
+
+#submit-btn:hover{
+    transform: translateY(-5px) !important;
+}
+
+#submit-btn:active{
+    transform: translateX(0px) !important;
+}
+
+
+
+/* navbar css styles for navigation bar*/
+@media only screen and (max-width: 1019px){
+
+    .navbar{
+        position: relative;
+        border-bottom: .5px solid rgb(20, 20, 20,.1);
+    }
+
+    .navbar-brand{
+        font-weight: 700;
+        font-size: 23px;
+    }
+
+    .navbar-collapse{
+        position: absolute;
+        background-color: rgb(53, 52, 52);
+        width: 100% !important;
+        top: 56px;
+        left: 0;
+        height: 0;
+        transition: height .3s linear;
+        z-index: 9;
+    }
+
+    .navbar-toggler{
+        color: transparent !important;
+        border: none !important;
+        padding: 0px !important;
+        transition: transform .3s linear;
+    }
+
+    .openNav{
+        transform: rotate(270deg);
+    }
+
+    .open{
+        height: 100vh;
+    }
+
+    .nav-link{
+        font-size: 20px;
+        color: rgb(247, 244, 244);
+    }
+
+    .nav-item:first-child{
+        margin-top: 30px;
+    }
+
+
+}
+
+
+
+
+/* laptop media query */
+
+@media only screen and (min-width: 1020px){
+
+    /* styles for navbar  */
+    .navbar-brand{
+        font-size: 30px;
+        font-weight: 700;
+    }
+
+    .nav-link{
+        font-size: 17px;
+        color: black;
+    }
+
+    .nav-item{
+        margin-right: 20px;
+    }
+
+    .nav-item:last-child{
+        margin-right: 0px;
+    }
+
+    .form-head{
+        margin-bottom: 20px;
+        font-size: 30px;
+        font-weight: 600;
+    }
+
+}

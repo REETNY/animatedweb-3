@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/styles4.css">
+
+    <!-- gsap animation link  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+
+</head>
+
+<body class="main-body">
+
+
+    <header class="head">
+        
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-md">
+              <a class="navbar-brand brand-name" href="#">DEEN</a>
+              <button class="navbar-toggler ham" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <div class="navbar-toggler-icon"></div>
+              </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item text-center">
+                            <a class="nav-link" aria-current="page" href="/index.html">Home</a>
+                        </li>
+                        <li class="nav-item text-center">
+                            <a class="nav-link" href="/project.html">Projects</a>
+                        </li>
+                        <li class="nav-item text-center">
+                            <a class="nav-link" href="/about.html">About</a>
+                        </li>
+                        <li class="nav-item text-center">
+                            <a class="nav-link" href="/contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+          </nav>
+    </header>
+
+    <div class="overlay">
+        <div class="cover"></div>
+        <div class="cover"></div>
+        <div class="cover">Contact</div>
+        <div class="cover"></div>
+        <div class="cover"></div>
+    </div>
+
+    <section class="form-body">
+        <div class="container-md pb-5">
+
+            <div class="text-center form-head">Contact Me</div>
+
+
+
+            <div class="row justify-content-center">
+                <div class="col-11 col-md-8 col-lg-5 main-form">
+                    <form action="" method="get">
+
+                        <div class="row justify-content-between">
+
+                            <div class="col-12 col-md-6">
+
+                                <label for="Fname" class="form-label">First Name</label>
+                                <input type="text" id="Fname" class="form-control" required placeholder="John">
+
+                            </div>
+
+                            <div class="col-12 col-md-6 mt-3 mt-md-0">
+
+                                <label for="Lname" class="form-label">Last Name</label>
+                                <input type="text" id="Lname" class="form-control" required placeholder="Doe">
+
+                            </div>
+                        </div>
+                        
+                        <label for="email" class="form-label mt-3">Email</label>
+                        <input type="email" id="email" placeholder="johndoe@domain.com" required class="form-control">
+
+                        <label for="phone" class="form-label mt-3">Phone No</label>
+                        <input type="tel" id="phone" placeholder="5535-5554-555" required class="form-control">
+
+                        <label for="email" class="form-label mt-3">Email</label>
+                        <input type="email" id="email" placeholder="johndoe@domain.com" required class="form-control">
+
+                        <label for="textarea" class="form-label d-block mt-3">Message</label>
+                        <textarea name="textarea" class="mb-3" placeholder="Kindly write your message" required id="textarea" cols="30" rows="10" class="form-label"></textarea>
+
+                        <button class="btn submit-btn" id="submit" type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    
+
+
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/jquery.js"></script>
+    <script src="/js/popper.js"></script>
+    <script src="/js/typed.js"></script>
+    <script src="/js/custom4.js"></script>
+</body>
+</html>
