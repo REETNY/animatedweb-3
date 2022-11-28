@@ -5,6 +5,7 @@ console.log(tl1)
 
 tl1.to(".cover", {height: "0vh", duration: 4.5, ease: "power2.easeOut", stagger: 0.2});;
 tl1.from(".brand-name", {y: -30, opacity: 0, duration: 2, ease: "Expo.easeInOut"}, "-=0.5");
+tl1.from(".navbar-toggler-icon", {y: -30, opacity: 0, duration: 1, ease: "power2.ease"}, "-=0.5");
 tl1.from(".nav-item", {y: -30, opacity: 0, duration: 2, ease: "Expo.easeInOut", stagger: 0.2}, "-=0.8");
 
 
@@ -13,7 +14,9 @@ gsap.registerPlugin(ScrollTrigger);
 const tl2 = gsap.timeline({
     scrollTrigger: {
         trigger: ".section1",
-        start: "top top"
+        start: "top top",
+        end: "bottom bottom",
+        toggleActions: "play none none reset"
     }
 });
 tl2.from(".intro-head2", {y: -50, opacity: 0, duration: 1.5, ease: "Expo.easeInOut" }, "+=7");

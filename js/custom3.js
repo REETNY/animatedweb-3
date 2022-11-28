@@ -33,6 +33,7 @@ let tl1 = new TimelineMax({
 
 tl1.to(".cover", {height: "0vh", duration: 4.5, ease: "power2.easeOut", stagger: 0.2});
 tl1.from(".brand-name", {y: -30, opacity: 0, duration: 2, ease: "Expo.easeInOut"}, "-=0.5");
+tl1.from(".navbar-toggler-icon", {y: -30, opacity: 0, duration: 1, ease: "power2.ease"}, "-=0.5");
 tl1.from(".my-img", {x: 90, opacity: 0, duration: 2, ease: "power2.easeIn"}, "-=0.3");
 tl1.from(".about-head", {y: -30, opacity: 0, duration: 1, ease: "Expo.easeIn"}, "-=0.8");
 tl1.from(".nav-item", {y: -20, opacity: 0, duration: 2, ease: "Expo.easeInOut", stagger: 0.22}, "-=0.5");

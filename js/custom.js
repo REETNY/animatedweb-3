@@ -4,7 +4,9 @@ gsap.registerPlugin(ScrollTrigger);
 const tl = gsap.timeline({
     scrollTrigger: {
         trigger: ".section2",
-        start: "top top"
+        start: "top top",
+        end: "bottom bottom",
+        toggleActions: "play none none reset"
     }
 });
 
@@ -18,7 +20,8 @@ let tl2 = new TimelineMax({
 });
 
 tl2.to(".cover", {height: "0vh", duration: 4.5, ease: "power2.easeOut", stagger: 0.2});
-tl2.from(".brand-name", {y: -30, opacity: 0, duration: 2, ease: "Expo.easeInOut"}, "-=0.5")
+tl2.from(".brand-name", {y: -30, opacity: 0, duration: 2, ease: "Expo.easeInOut"}, "-=0.8")
+tl2.from(".navbar-toggler-icon", {y: -30, opacity: 0, duration: 1, ease: "power2.ease"}, "-=0.5");
 tl2.from(".nav-item", {y: -30, opacity: 0, duration: 2, ease: "Expo.easeInOut", stagger: 0.2}, "-=0.8")
 tl2.from(".intro-name", {y: -30, opacity: 0, duration: 2, ease: "power2.easeIn", stagger: 0.2}, "-=0.5")
 tl2.from("#hero-conts", {opacity: 0, duration: 1, ease: "power2.easeIn"}, "-=0.5")
