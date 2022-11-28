@@ -14,13 +14,13 @@ gsap.registerPlugin(ScrollTrigger);
 const tl2 = gsap.timeline({
     scrollTrigger: {
         trigger: ".section1",
-        start: "top top",
+        start: "-1 top",
         end: "bottom bottom",
         toggleActions: "play none none reset"
     }
 });
-tl2.from(".intro-head2", {y: -50, opacity: 0, duration: 1.5, ease: "Expo.easeInOut" }, "+=7");
-tl2.from(".project-cont", {x: 70, opacity: 0, duration: 3, stagger: 0.3, ease: "Expo.easeInOut"}, "-=1");
+tl2.from(".intro-head2", {y: -50, opacity: 0, duration: 0.9, ease: "Expo.easeInOut" });
+tl2.from(".project-cont", {x: 70, opacity: 0, duration: 1.5, stagger: 0.3, ease: "Expo.easeInOut"}, "-=.4");
 
 
 
