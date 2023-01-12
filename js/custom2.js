@@ -19,8 +19,8 @@ const tl2 = gsap.timeline({
         toggleActions: "play none none reset"
     }
 });
-tl2.from(".intro-head2", {y: -50, opacity: 0, duration: 0.9, ease: "Expo.easeInOut" });
-tl2.from(".project-cont", {x: 70, opacity: 0, duration: 1.5, stagger: 0.3, ease: "Expo.easeInOut"}, "-=.4");
+tl2.from(".intro-head2", {y: -50, opacity: 0, duration: 0.4, ease: "Expo.easeInOut" });
+tl2.from(".project-cont", {x: 70, opacity: 0, duration: 0.5, stagger: 0.2, ease: "Expo.easeInOut"}, "-=.3");
 
 
 

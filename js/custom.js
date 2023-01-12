@@ -10,8 +10,8 @@ const tl = gsap.timeline({
     }
 });
 
-tl.from(".intro-head2", {y: -50, opacity: 0, duration: 0.8, ease: "Expo.easeInOut" });
-tl.from(".project-cont", {x: 300, opacity: 0, duration: 1.5, stagger: 0.3, ease: "Expo.easeInOut"}, "-=0.4");
+tl.from(".intro-head2", {y: -50, opacity: 0, duration: 0.4, ease: "Expo.easeInOut" });
+tl.from(".project-cont", {x: 300, opacity: 0, duration: 0.4, stagger: 0.2, ease: "Expo.easeInOut"}, "-=0.2");
 tl.fromTo(".more-projects", {opacity: 0, ease: "Expo.easeInOut"}, {opacity: 1, duration: 2});
 
 
